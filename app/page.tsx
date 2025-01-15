@@ -97,14 +97,14 @@ export default function CommitTracker() {
           onChange={(e) => setYearlyTarget(parseInt(e.target.value, 10))}
           className="border p-2 w-full"
         />
-        {yearlyTarget === 0 && (
+
           <button
             onClick={saveYearlyTarget}
             className="mt-2 bg-green-500 text-white p-2 rounded"
           >
             Save Target
           </button>
-        )}
+        
       </div>
       {totalCommits !== null && (
         <p className="mt-4">
